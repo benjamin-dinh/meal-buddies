@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="recipes.css">
+  <link rel="stylesheet" href="https://use.typekit.net/taw5ebb.css">
+  <link rel="icon" href="images/favicon.ico">
+  <script src="https://kit.fontawesome.com/ee8b798ff4.js" crossorigin="anonymous"></script>
+
+  <title>MealBuddies</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="Logo" onclick="window.location.href='home.html';">
+    <nav>
+      <ul>
+        <li id="home"><a href="home.html">Home</a></li>
+        <li id="discover"><a href="discover.html">Discover</a></li>
+        <li id="recipes"><a href="recipes.html">Recipes</a></li>
+        <li id="involved"><a href="involved.html">Get Involved</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="banner">
+      <div>
+        <section>
+          <h1>Find the right recipe for you</h1>
+        </section>
+        <img src="./images/recipebannergraphic.svg" alt="heroimg graphic">
+      </div>
+    </section>
+    <section id="posts">
+      <h1>Recipes</h1>
+      <div id="posts_wrapper">
+      </div>
+    </section>
+
+  </main>
+
+  <div id="overlay" class="hidden">
+    <div id="overlay_bg" onclick="closeOverlay()"></div>
+    <div id="overlay_container">
+      <div id='post_text'>
+        <h1 id='recipe_name'></h1>
+        <h3 id='serving'></h3>
+        <div id='ingredients'></div>
+
+          <a id='full_recipe'>View Full Recipe</a>
+
+      </div>
+      <div id='post_img'>
+        <h1 id='x' onclick='closeOverlay()'> &times; </h1>
+        <img id='food_img' src="#" alt="Food-image">
+      </div>
+      <!-- <div id="post_text">
+          <h1>Name of Org/Business</h1>
+          <h3>Type of location</h3>
+          <p><i class="fas fa-calendar"></i><time datetime="2021-01-01"> Jan 1</time>, 8AM-5PM</p>
+          <p><i class="fas fa-map-marker-alt"></i>1 Shields Ave, Davis CA 95618</p>
+          <p><i class="fas fa-phone"></i>(520)123-4567</p>
+          <button type="button" onclick="#">Visit Website</button>
+        </div>
+
+        <div id="post_img">
+          <h1 id="x" onclick="closeOverlay()">
+            &times;
+          </h1>
+          <img src="images/filler.jpg" alt="Filler Image">
+        </div> -->
+
+    </div>
+
+    <div id="box"></div>
+  </div>
+  <footer>
+    <script src="./private/recipes.js"></script>
+    <a href="https://storyset.com/business">Illustration by Freepik Storyset</a>
+  </footer>
+</body>
+
+
+</html>

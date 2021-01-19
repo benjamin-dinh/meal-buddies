@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="involved.css">
+    <link rel="stylesheet" href="https://use.typekit.net/taw5ebb.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>MealBuddies</title>
+</head>
+<body>
+<header>
+  <img src="images/logo.png" alt="Logo" onclick="window.location.href='home.html';">
+  <nav>
+    <ul>
+      <li id="home"><a href="home.html">Home</a></li>
+      <li id="discover"><a href="discover.html">Discover</a></li>
+      <li id="recipes"><a href="recipes.html">Recipes</a></li>
+      <li id="involved"><a href="involved.html">Get Involved</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <div class="main">
+    <div class="questions">
+      <div class="entry">
+        <label class="fields" for="organization">Business/Organization Name*</label>
+        <input class="fields" id="organization" type="text" value="" name="organization">
+      </div>
+      <div class="entry">
+        <label class="fields" for="address">Street Address*</label>
+        <input class="fields" id="address" type="text" value="" name="address">
+      </div>
+      <div class="entry">
+        <label class="fields" for="city">City*</label>
+        <input class="fields" id="city" type="text" value="" name="city">
+      </div>
+      <div class="entry">
+        <label class="fields" for="state">State Code (Ex: CA)*</label>
+        <input class="fields" id="state" type="text" value="" name="state">
+      </div>
+      <div class="entry">
+        <label class="fields" for="email">Email Address*</label>
+        <input class="fields" id="email" type="text" value="" name="email">
+      </div>
+      <div class="entry">
+        <label class="fields" for="phone">Phone Number*</label>
+        <input class="fields" id="phone" type="text" value="" name="phone">
+      </div>
+      <div class="entry">
+        <label class="fields" for="website">Website Link*</label>
+        <input class="fields" id="website" type="text" value="" name="website">
+      </div>
+      <div class="entry" >
+        <label class="fields">Operating Day(s)*</label>
+        <div>
+          <input type="checkbox" id="Monday" class="day" value="Mon">
+          <label for="Monday">Monday</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Tuesday" class="day" value="Tue">
+          <label for="Tuesday">Tuesday</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Wednesday" class="day" value="Wed">
+          <label for="Wednesday">Wednesday</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Thursday" class="day" value="Thu">
+          <label for="Thursday">Thursday</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Friday" class="day" value="Fri">
+          <label for="Friday">Friday</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Saturday" class="day" value="Sat">
+          <label for="Saturday">Saturday</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Sunday" class="day" value="Sun">
+          <label for="Sunday">Sunday</label>
+        </div>
+      </div>
+      <div class="rowentry">
+        <div class="entry time">
+          <label class="fields" for="open">Opening Time*</label>
+          <select class="fields" id="open" name="open">
+            <option value="">--</option>
+            <option value="12AM">12AM</option>
+            <option value="1AM">1AM</option>
+            <option value="2AM">2AM</option>
+            <option value="3AM">3AM</option>
+            <option value="4AM">4AM</option>
+            <option value="5AM">5AM</option>
+            <option value="6AM">6AM</option>
+            <option value="7AM">7AM</option>
+            <option value="8AM">8AM</option>
+            <option value="9AM">9AM</option>
+            <option value="10AM">10AM</option>
+            <option value="11AM">11AM</option>
+            <option value="12PM">12PM</option>
+            <option value="1PM">1PM</option>
+            <option value="2PM">2PM</option>
+            <option value="3PM">3PM</option>
+            <option value="4PM">4PM</option>
+            <option value="5PM">5PM</option>
+            <option value="6PM">6PM</option>
+            <option value="7PM">7PM</option>
+            <option value="8PM">8PM</option>
+            <option value="9PM">9PM</option>
+            <option value="10PM">10PM</option>
+            <option value="11PM">11PM</option>
+          </select>
+        </div>
+        <div class="entry time">
+          <label class="fields" for="close">Closing Time*</label>
+          <select class="fields" id="close" name="close">
+            <option value="">--</option>
+            <option value="12AM">12AM</option>
+            <option value="1AM">1AM</option>
+            <option value="2AM">2AM</option>
+            <option value="3AM">3AM</option>
+            <option value="4AM">4AM</option>
+            <option value="5AM">5AM</option>
+            <option value="6AM">6AM</option>
+            <option value="7AM">7AM</option>
+            <option value="8AM">8AM</option>
+            <option value="9AM">9AM</option>
+            <option value="10AM">10AM</option>
+            <option value="11AM">11AM</option>
+            <option value="12PM">12PM</option>
+            <option value="1PM">1PM</option>
+            <option value="2PM">2PM</option>
+            <option value="3PM">3PM</option>
+            <option value="4PM">4PM</option>
+            <option value="5PM">5PM</option>
+            <option value="6PM">6PM</option>
+            <option value="7PM">7PM</option>
+            <option value="8PM">8PM</option>
+            <option value="9PM">9PM</option>
+            <option value="10PM">10PM</option>
+            <option value="11PM">11PM</option>
+          </select>
+        </div>
+      </div>
+      <div class="entry">
+        <label class="fields" for="image">Image*</label>
+        <input class="fields hidden" id="image" type="file" name="image" accept="image/png, image/jpeg">
+        <!-- <img id="preview"/> -->
+        <!-- <input class="fields" id="image" type="text" name="image" value=""> -->
+      </div>
+      <div class="entry">
+        <label class="fields" for="comments">Additional Comments</label>
+        <input class="fields" id="comments" type="text" name="comments" value="">
+      </div>
+      <div class="entry">
+        <input class="fields" type="submit" id="submitButton" value="Submit">
+      </div>
+    </div>
+    <div class="right">
+      <div class="description">
+        <h1>Does your business or organization donate food? Apply to get involved!</h1>
+        <h2>How it works</h2>
+        <ol>
+          <li>Apply to get involved by filling out the form below</li>
+          <li>Once submitted, your application will be reviewed</li>
+          <li>Once approved, your business/organization will be published!</li>
+        </ol>
+      </div>
+      <div class="graphic">
+        <img class = "graphic" src="images/involvedgraphic.svg" alt="Get Involved Graphic">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-storage.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyBTuZZbKGX39NOawa0R1WW59YTQWBUIcuo",
+        authDomain: "mealbuddies-61dfc.firebaseapp.com",
+        databaseURL: "https://mealbuddies-61dfc-default-rtdb.firebaseio.com",
+        projectId: "mealbuddies-61dfc",
+        storageBucket: "mealbuddies-61dfc.appspot.com",
+        messagingSenderId: "360518152627",
+        appId: "1:360518152627:web:380af4ecaab24130a91bc6"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="data.js"></script>
+
+    <a href="https://storyset.com/business">Illustration by Freepik Storyset</a>
+  </footer>
+</body>
+
+
+</html>

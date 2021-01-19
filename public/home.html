@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://use.typekit.net/taw5ebb.css">
+  <link rel="icon" href="images/favicon.ico">
+  <script src="https://kit.fontawesome.com/ee8b798ff4.js" crossorigin="anonymous"></script>
+
+  <title>MealBuddies</title>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo" onclick="window.location.href='home.html';">
+    <nav>
+      <ul>
+        <li id="home"><a href="home.html">Home</a></li>
+        <li id="discover"><a href="discover.html">Discover</a></li>
+        <li id="recipes"><a href="recipes.html">Recipes</a></li>
+        <li id="involved"><a href="involved.html">Get Involved</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <section id="banner">
+      <div>
+        <section>
+          <h1>Food security in your community</h1>
+          <p>Discover food resources across Yolo County or apply to get involved in donating food</p>
+        </section>
+        <img src="./images/heroimg.svg" alt="heroimg graphic">
+      </div>
+    </section>
+    <section id="posts">
+      <h1>Resources for this week</h1>
+      <div id="posts_wrapper">
+        
+      </div>
+    </section>
+
+  </main>
+
+  <div id="overlay" class="hidden">
+    <div id="overlay_bg" onclick="closeOverlay()"></div>
+    <div id="overlay_container">
+        <div id="post_text">
+          <h1 id ="businessname"></h1>
+          <h3 id = "city"></h3>
+          <p id = "hours"></p>
+          <p id ="address"></p>
+          <p id = "phone"></p>
+          <button type="button"><a id="website" href="">Visit Website</a></button>
+        </div>
+
+        <div id="post_img">
+          <h1 id="x" onclick="closeOverlay()">
+            &times;
+          </h1>
+          <img src="" id = "imageFill" alt="Filler Image">
+        </div>
+
+    </div>
+
+    <div id="box"></div>
+  </div>
+  <footer>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-storage.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyBTuZZbKGX39NOawa0R1WW59YTQWBUIcuo",
+        authDomain: "mealbuddies-61dfc.firebaseapp.com",
+        databaseURL: "https://mealbuddies-61dfc-default-rtdb.firebaseio.com",
+        projectId: "mealbuddies-61dfc",
+        storageBucket: "mealbuddies-61dfc.appspot.com",
+        messagingSenderId: "360518152627",
+        appId: "1:360518152627:web:380af4ecaab24130a91bc6"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="home.js"></script>
+    <a href="https://storyset.com/business">Illustration by Freepik Storyset</a>
+  </footer>
+</body>
+
+
+</html>

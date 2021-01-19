@@ -1,0 +1,122 @@
+html {
+    font-family: proxima-nova, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0.5em 4em;
+  background-color: #F5F4F0;
+  align-items: center;
+}
+
+header img {
+  height: 90%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  padding-left: 5em;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #263238;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 60vw;
+    justify-content: space-between;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    padding: 20px;
+    padding-top: 40px;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding: 30px;
+    padding-left: 3vw;
+}
+.description{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #263238
+}
+
+.description h2{
+  font-weight: 500;
+}
+
+.fields{
+    display:block;
+}
+label.fields{
+    padding-bottom: 5px;
+}
+.entry{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+.entry{
+    padding: 8px;
+}
+.rowentry{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+}
+
+#submitButton, #image{
+    width: 100px;
+    cursor: pointer;
+}
+
+#submitButton {
+  border: none;
+  width: 150px;
+  padding: 10px 0;
+  color: white;
+  background-color: #738F48;
+  border-radius: 5px;
+}
+
+.graphic{
+    width: 30vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: gray;
+  margin: 4em 0;
+}

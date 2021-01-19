@@ -1,0 +1,51 @@
+main #banner {
+  height: 40vh;
+  background-color: #F5F4F0;
+
+  display: flex;
+  justify-content: center;
+  box-shadow: inset 0px -92px 45px -133px rgba(0,0,0,0.75);
+}
+
+main #banner > div {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main #banner h1 {
+  font-size: 3.5em;
+  margin: auto;
+  color: #263238;
+}
+
+main #banner p {
+  font-size: 1.5em;
+  color: #263238;
+}
+
+main #banner img {
+  height: 120%;
+  margin-left: 20%;
+}
+
+#ingredients {
+  margin-bottom: 20%;
+}
+
+#full_recipe {
+
+  padding: 15px;
+
+  margin-left: 30%;
+  margin-bottom: 10%;
+
+  border: none;
+  font-family: proxima-nova, sans-serif;
+  background: #738F48;
+  color: white;
+  border-radius: 5px;
+
+  text-decoration: none;
+}
